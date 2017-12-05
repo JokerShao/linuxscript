@@ -38,4 +38,5 @@
 			-H  or  --help                  Print Help(this message) and exit
 
 ## License
-update.sh is released under the LGPL license. See [LICENSE](https://raw.githubusercontent.com/JokerShao/updateScript/master/LICENSE) for details.
+This script is released under the GPL license. See [LICENSE](https://github.com/JokerShao/linuxscript/blob/master/LICENSE) for details.
+
