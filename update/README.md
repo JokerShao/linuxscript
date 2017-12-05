@@ -37,6 +37,3 @@
 			-A                              Update all
 			-H  or  --help                  Print Help(this message) and exit
 
-## License
-This script is released under the GPL license. See [LICENSE](https://github.com/JokerShao/linuxscript/blob/master/LICENSE) for details.
-
