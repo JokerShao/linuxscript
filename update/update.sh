@@ -17,8 +17,9 @@ function hosts {
     # sudo -S ./Update_hosts.py << EOF
     # $PASSWORD
     # EOF
-    if [ $? -eq 1 ] || [ $? -eq 2 ]
+    if [ $? -eq 1 ] || [ $? -eq 2 ] || [ $? -eq 3 ]
     then
+		echo "exit"
         exit
     fi
 }

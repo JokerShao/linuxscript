@@ -14,7 +14,6 @@ class WriteError(Exception):
 
 def get_hosts():
     print "Get hosts file start..."
-    # url = "https://raw.githubusercontent.com/racaljk/hosts/master/hosts"
     url = "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts"
     try:
         request = urllib2.Request(url)
@@ -23,7 +22,7 @@ def get_hosts():
         print "Network connect failed!"
         raise NetworkError
     else:
-        return raw_hosts, raw_hosts[98:108]
+        return raw_hosts, raw_hosts[103:113]
 
 def write2hosts(raw_hosts):
     print "Write hosts file start..."
