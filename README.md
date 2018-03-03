@@ -7,13 +7,17 @@ This script will update your apt repository and pip/pip3 repository automaticall
 ## cpu-monitor
 a bash script, you can know your cpu is boosting mode or not according to the cpu realtime frequency.
 
+## shadowsocks-control
+run this script can open [shadowsocks-Qt5.AppImage][2].
+
 ## chrome-extensions
 some extensions for chrome.
 
 ## License
-These script is released under the GPL license. See [LICENSE][2] for details.
+These script is released under the GPL license. See [LICENSE][3] for details.
 
 [1]:https://github.com/JokerShao/linuxscript/blob/master/update/README.md
-[2]:https://github.com/JokerShao/linuxscript/blob/master/LICENSE
+[2]:https://github.com/shadowsocks/shadowsocks-qt5
+[3]:https://github.com/JokerShao/linuxscript/blob/master/LICENSE
 
 
