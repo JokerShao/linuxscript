@@ -4,6 +4,9 @@ Some python&shell script what make your linux easier to use.
 ## update
 This script will update your apt repository and pip/pip3 repository automatically.You can see usage in [here][1]
 
+## cpu-monitor
+a bash script, you can know your cpu is boosting mode or not according to the cpu realtime frequency.
+
 ## chrome-extensions
 some extensions for chrome.
 
