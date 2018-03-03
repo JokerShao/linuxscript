@@ -8,7 +8,7 @@ This script will update your apt repository and pip/pip3 repository automaticall
 a bash script, you can know your cpu is boosting mode or not according to the cpu realtime frequency.
 
 ## shadowsocks-control
-run this script can open [shadowsocks-Qt5.AppImage][2].
+run this script can open [shadowsocks-Qt5.AppImage][2] in the background - that means you can close the terminal.(note:You have download the latest release AppImage before that).
 
 ## chrome-extensions
 some extensions for chrome.
