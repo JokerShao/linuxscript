@@ -10,6 +10,9 @@ a bash script, you can know your cpu is boosting mode or not according to the cp
 ## shadowsocks-control
 run this script can open [shadowsocks-Qt5.AppImage][2] in the background - that means you can close the terminal.(note:You have download the latest release AppImage before that).
 
+## user-dirs
+modify this file, you can remove default floder in ~/.This is useful when you want cleanup your home floder.
+
 ## chrome-extensions
 some extensions for chrome.
 
