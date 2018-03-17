@@ -48,8 +48,16 @@ function pip3 {
     echo $PASSWORD | sudo -S python3 $SCRIPT_WORK_PATH/Update_pip3.py
 }
 
+function database {
+    echo "#############################"
+    echo "#    Update database...     #"
+    echo "#############################"
+    echo $PASSWORD | sudo -S updatedb
+    echo "update finished."
+}
+
 # Script run from there.
-if [ $# -eq 0 ];then hosts; apt;
+if [ $# -eq 0 ];then hosts; apt; database;
 elif [ $# -eq 1 ];then
     if [ $1 = "-H" ] || [ $1 = "--help" ];then
 
@@ -66,6 +74,7 @@ elif [ $# -eq 1 ];then
         echo "   --init                          Script init"
         echo "   -h  or  --hosts                 Only update hosts"
         echo "   -a  or  --apt                   Only update apt"
+		echo "   -d  or  --database              update database in /var/cache/locate/locatedb"
         echo "   -p                              Only update pip"
         echo "   -p3                             Only update pip3"
         echo "   -A                              Update all"
@@ -77,6 +86,7 @@ elif [ $# -eq 1 ];then
         echo "Init Success!"
     elif [ $1 = "-h" ] || [ $1 = "--hosts" ];then hosts; exit 0
     elif [ $1 = "-a" ] || [ $1 = "--apt" ];then apt; exit 0
+	elif [ $1 = "-d" ] || [ $1 = "--database" ];then database; exit 0
     elif [ $1 = "-p" ];then pip; exit 0
     elif [ $1 = "-p3" ];then pip3; exit 0
     elif [ $1 = "-A" ];then
