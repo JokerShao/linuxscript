@@ -57,7 +57,7 @@ function database {
 }
 
 # Script run from there.
-if [ $# -eq 0 ];then hosts; apt; database;
+if [ $# -eq 0 ];then hosts; apt;
 elif [ $# -eq 1 ];then
     if [ $1 = "-H" ] || [ $1 = "--help" ];then
 
