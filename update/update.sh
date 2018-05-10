@@ -38,14 +38,17 @@ function pip {
     echo "#############################"
     echo "#    Update pip Start...    #"
     echo "#############################"
-    echo $PASSWORD | sudo -S python $SCRIPT_WORK_PATH/Update_pip.py
+    # echo $PASSWORD | sudo -S python $SCRIPT_WORK_PATH/Update_pip.py
+    pip list --outdated --format=legacy | awk '{print $1}' | xargs sudo -H pip install -U
+
 }
 
 function pip3 {
     echo "#############################"
     echo "#    Update pip3 Start...   #"
     echo "#############################"
-    echo $PASSWORD | sudo -S python3 $SCRIPT_WORK_PATH/Update_pip3.py
+    # echo $PASSWORD | sudo -S python3 $SCRIPT_WORK_PATH/Update_pip3.py
+    pip3 list --outdated --format=legacy | awk '{print $1}' | xargs sudo -H pip3 install -U
 }
 
 function database {
