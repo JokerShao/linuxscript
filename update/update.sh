@@ -4,6 +4,7 @@
 
 # Change this before use the script
 PASSWORD="YOURPASSWORD"
+HOSTNAME=$(hostname)
 
 SCRIPT_INIT_PATH=$(realpath update.sh)
 SCRIPT_WORK_PATH=$(dirname $(readlink -f "$0"))
@@ -12,7 +13,7 @@ function hosts {
     echo "#############################"
     echo "#   Update Hosts Start...   #"
     echo "#############################"
-    echo $PASSWORD | sudo -S python $SCRIPT_WORK_PATH/Update_hosts.py
+    echo $PASSWORD | sudo -S python $SCRIPT_WORK_PATH/Update_hosts.py $HOSTNAME
     # Other way:
     # sudo -S ./Update_hosts.py << EOF
     # $PASSWORD
