@@ -29,7 +29,7 @@ def get_hosts():
         raw_hosts = urllib2.urlopen(url).read()
     except urllib2.URLError:
             print "Network connect failed!"
-            raise NetwrokError
+            raise NetworkError
     else:
         return raw_hosts, raw_hosts[103:113]
 
