@@ -16,6 +16,9 @@ modify this file, you can remove default floder in ~/.This is useful when you wa
 ## chrome-extensions
 some extensions for chrome.
 
+## contentcleaner.py
+auto clean nutstore invalid character.
+
 ## License
 These script is released under the GPL license. See [LICENSE][3] for details.
 
