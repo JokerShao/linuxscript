@@ -45,7 +45,7 @@ def clean_content(filelist, invalid_char):
     modified_list = list()
     for instance in filelist:
         fenc = detect_encoding(instance)
-        if not fenc == 'utf-8':
+        if fenc != 'utf-8' and fenc != 'ascii':
             print(instance, 'encoding is', fenc+', will save it as utf-8.')
         fdescriptor = open(instance, 'r', encoding=fenc)
         contents = fdescriptor.read()
@@ -55,7 +55,7 @@ def clean_content(filelist, invalid_char):
         fdescriptor.write(newcontents)
         fdescriptor.close()
 
-        if contents != newcontents or fenc != 'utf-8':
+        if contents != newcontents or (fenc != 'utf-8' and fenc != 'ascii'):
             modified_list.append(instance)
     return len(modified_list), modified_list
 

@@ -3,7 +3,7 @@
 # author: joker
 
 # Change this before use the script
-PASSWORD="letmefly"
+PASSWORD="YOURPASSWORD"
 HOSTNAME=$(hostname)
 
 SCRIPT_INIT_PATH=$(realpath update.sh)
