@@ -21,3 +21,11 @@ export PATH
 
 # Zexi add this line 2019-08-18 to change homebrew source
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
+# add completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# add git-completion
+if [ -f ~/.git-completion.bash ]; then
+   . ~/.git-completion.bash
+fi
