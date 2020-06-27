@@ -19,6 +19,9 @@ some extensions for chrome.
 ## contentcleaner.py
 auto clean nutstore invalid character.
 
+## .bash_profile
+my macbook bash profile.
+
 ## License
 These script is released under the GPL license. See [LICENSE][3] for details.
 
