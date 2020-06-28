@@ -48,8 +48,7 @@ unset __conda_setup
 
 # >>> Zexi add 2020.06.27 for ubuntu style ls >>>
 alias ll='ls -alF'
-alias la='ls -la'
+alias la='ls -A'
 alias l='ls -CF'
 # <<< Zexi add 2020.06.27 for ubuntu style ls <<<
-
 
