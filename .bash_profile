@@ -52,3 +52,8 @@ alias la='ls -A'
 alias l='ls -CF'
 # <<< Zexi add 2020.06.27 for ubuntu style ls <<<
 
+# >>> Zexi add updatedb alias 2020.07.04 >>>
+alias updatedb="sudo /usr/libexec/locate.updatedb"
+# <<< Zexi add updatedb alias 2020.07.04 <<<
+
+
