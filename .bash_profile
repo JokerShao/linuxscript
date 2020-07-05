@@ -56,10 +56,10 @@ alias l='ls -CF'
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 # <<< Zexi add updatedb alias 2020.07.04 <<<
 
-# >>> Zexi add alias, set port proxy easily >>>
+# >>> Zexi add alias 2020.07.04, set port proxy easily >>>
 # alias echoproxy="echo -e 'ALL_PROXY:' $ALL_PROXY '\nall_proxy:' $all_proxy"
 alias enproxy="export ALL_PROXY='socks5://127.0.0.1:1080'"
 alias unproxy="unset ALL_PROXY && unset all_proxy"
-# <<< Zexi add alias, set port proxy easily <<<
+# <<< Zexi add alias 2020.07.04, set port proxy easily <<<
 
 
