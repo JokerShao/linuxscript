@@ -141,7 +141,14 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PAT
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/zexi/rubiks_cube/pvnet/lib/utils/extend_utils/lib
 # <<< for pvnet test <<<
 
+# >>> Zexi add alias 2020.07.04, set port proxy easily >>>
+# alias echoproxy="echo -e 'ALL_PROXY:' $ALL_PROXY '\nall_proxy:' $all_proxy"
+alias enproxy="export ALL_PROXY='socks5://127.0.0.1:1080'"
+alias unproxy="unset ALL_PROXY && unset all_proxy"
+# <<< Zexi add alias 2020.07.04, set port proxy easily <<<
 
 export MVCAM_COMMON_RUNENV=/opt/MVS/lib
 export LD_LIBRARY_PATH=/opt/MVS/lib/64:/opt/MVS/lib/32:$LD_LIBRARY_PATH
 source /opt/ros/melodic/setup.bash
+
+
