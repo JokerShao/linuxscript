@@ -148,7 +148,7 @@ alias unproxy="unset ALL_PROXY && unset all_proxy"
 # <<< Zexi add alias 2020.07.04, set port proxy easily <<<
 
 # >>> Zexi add opencv path 2020.07.08 >>>
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/zexi/opencv_ins/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/zexi/code_lib/opencv_ins/lib
 # <<< Zexi add opencv path 2020.07.08 <<<
 
 # # >>> Zexi remove hikvision path 2020.07.08 >>>
