@@ -8,17 +8,18 @@ export GREP_OPTIONS='--color=auto'
 # <<< 2021.02.22 Zexi enable terminal color <<<
 
 
-# >>> 2021.02.28 Zexi change username@hostname color >>>
-if [ -n "$BASH_VERSION" ]; then
-    export PS1='\[\e[38;5;135m\]\u\[\e[0m\]@\[\e[38;5;166m\]\h\[\e[0m \[\e[38;5;118m\]\W\[\e[0m\] \$ '
-else
-    if [ "$UID" -eq 0 ]; then
-        export PROMPT="%F{135}%n%f@%F{166}%m%f %F{118}%~%f %# "
-    else
-        export PROMPT="%F{135}%n%f@%F{166}%m%f %F{118}%~%f \$ "
-    fi
-fi
-# <<< 2021.02.28 Zexi change username@hostname color <<<
+# # >>> 2021.02.28 Zexi change username@hostname color >>>
+# if [ -n "$BASH_VERSION" ]; then
+#     export PS1='\[\e[38;5;135m\]\u\[\e[0m\]@\[\e[38;5;166m\]\h\[\e[0m \[\e[38;5;118m\]\W\[\e[0m\] \$ '
+# else
+#     if [ "$UID" -eq 0 ]; then
+#         export PROMPT="%F{135}%n%f@%F{166}%m%f %F{118}%~%f %# "
+#     else
+#         export PROMPT="%F{135}%n%f@%F{166}%m%f %F{118}%~%f \$ "
+#     fi
+# fi
+# # <<< 2021.02.28 Zexi change username@hostname color <<<
+PROMPT='%F{green}%*%f:%F{green}%1~%f %# '
 
 
 # Setting PATH for Python 3.7
